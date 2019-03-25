@@ -1,0 +1,55 @@
+{"file":  //Optional File info
+	{
+	"id": "int",//ITC File id
+	"name": "string",//File name
+	"headimage": "string", //Heading image
+	"data": "string", //Additional data for this file
+	"description": "string", //Description Optional
+	"type": "string", //Resource type Optional
+	"categoryid": "int", //Category Optional
+	"lang": "string", //Email others? Optional
+	"added": "int", //Timestamp of added date
+	"keywords": "string", //Keywords for this file Optional
+	"usecomments": "int", //Enablee comments on file Optional
+	"uselikes": "int", //Enabled likes on file Optional
+	"numlikes": "int", //Number of likes Optional
+	"numcomments": "int" //Number of likes Optional
+},
+"comments": //All comments data
+[{
+	"id":"int",   //Comment id
+	"text": "string",   //Comment text
+	"timecreated": "string",   //Comment time created
+	"fromuser":   //Commented by user
+	{
+		"userid": "int", //User id
+		"fullname": "string", //User fullname
+		"useravatar": "string" //User image url
+	}, 
+	"replies"://Optional //All replies
+	[ 
+		{
+			"id": "int",   //Reply id
+			"text":"string",  //Reply text
+			"timecreated": "string",   //Comment text
+			"fromuser":   //Replied by user
+			{
+				"userid": "int",   //User id
+				"fullname": "string",   //User fullname
+				"useravatar": "string" //User image url
+			} 
+		}
+	]
+}],
+"warnings":  //Optional //list of warnings
+[ 
+	//warning
+	{
+		"item": "string", //  Optional //item
+		"itemid": "int", //  Optional //item id
+		"warningcode": "string", //   //the warning code can be used by the client app to implement specific behaviour
+		"message": "string" //   //untranslated english message to explain the warning
+	} 
+],
+"result": "int" //The processing result
+}
