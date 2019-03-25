@@ -1,55 +1,55 @@
-{"file":  //Optional File info
+{"file":   
 	{
-	"id": "int",//ITC File id
-	"name": "string",//File name
-	"headimage": "string", //Heading image
-	"data": "string", //Additional data for this file
-	"description": "string", //Description Optional
-	"type": "string", //Resource type Optional
-	"categoryid": "int", //Category Optional
-	"lang": "string", //Email others? Optional
-	"added": "int", //Timestamp of added date
-	"keywords": "string", //Keywords for this file Optional
-	"usecomments": "int", //Enablee comments on file Optional
-	"uselikes": "int", //Enabled likes on file Optional
-	"numlikes": "int", //Number of likes Optional
-	"numcomments": "int" //Number of likes Optional
+	"id": "int", 
+	"name": "string", 
+	"headimage": "string",  
+	"data": "string",  
+	"description": "string",  
+	"type": "string",  
+	"categoryid": "int",  
+	"lang": "string",  
+	"added": "int",  
+	"keywords": "string",  
+	"usecomments": "int",  
+	"uselikes": "int",  
+	"numlikes": "int",  
+	"numcomments": "int"  
 },
-"comments": //All comments data
+"comments":  
 [{
-	"id":"int",   //Comment id
-	"text": "string",   //Comment text
-	"timecreated": "string",   //Comment time created
-	"fromuser":   //Commented by user
+	"id":"int",    
+	"text": "string",    
+	"timecreated": "string",    
+	"fromuser":    
 	{
-		"userid": "int", //User id
-		"fullname": "string", //User fullname
-		"useravatar": "string" //User image url
+		"userid": "int",  
+		"fullname": "string",  
+		"useravatar": "string"  
 	}, 
-	"replies"://Optional //All replies
+	"replies": 
 	[ 
 		{
-			"id": "int",   //Reply id
-			"text":"string",  //Reply text
-			"timecreated": "string",   //Comment text
-			"fromuser":   //Replied by user
+			"id": "int",    
+			"text":"string",   
+			"timecreated": "string",    
+			"fromuser":    
 			{
-				"userid": "int",   //User id
-				"fullname": "string",   //User fullname
-				"useravatar": "string" //User image url
+				"userid": "int",    
+				"fullname": "string",    
+				"useravatar": "string"  
 			} 
 		}
 	]
 }],
-"warnings":  //Optional //list of warnings
+"warnings":   
 [ 
-	//warning
+	 
 	{
-		"item": "string", //  Optional //item
-		"itemid": "int", //  Optional //item id
-		"warningcode": "string", //   //the warning code can be used by the client app to implement specific behaviour
-		"message": "string" //   //untranslated english message to explain the warning
+		"item": "string",  
+		"itemid": "int",  
+		"warningcode": "string",  
+		"message": "string"  
 	} 
 ],
-"result": "int" //The processing result
+"result": "int"  
 }
